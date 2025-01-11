@@ -1,0 +1,535 @@
+/* General settings */
+
+/* We ensure that the page will have a minimum height of 100% of the window */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for a modern look */
+    color: #f5f5f5;
+	display: flex;
+    flex-direction: column;
+}
+
+/* Default table design */
+.default-table {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.default-table img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #ffcc00;
+}
+
+.default-table .default-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.default-table .default-button:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+/* Style for input[type="number"] */
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    color: #f5f5f5;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+}
+
+input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    color: #f5f5f5;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+}
+
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    color: #f5f5f5;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="password"]:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+}
+
+
+/* Style for textarea */
+textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    color: #f5f5f5;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    resize: vertical; /* Enable height change */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    min-height: 100px; /* Minimum height */
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+}
+
+/* Style for select */
+select {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    color: #f5f5f5;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    appearance: none; /* Hide arrow on some browsers */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath fill='%23ffcc00' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px 6px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+}
+
+/* Style for input[type="text"] */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    color: #f5f5f5;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+}
+
+
+/* Welcome section */
+.welcome-section {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-section img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #ffcc00;
+}
+
+/* Send message section */
+.sendMessageSection {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.sendMessageSection img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #ffcc00;
+}
+
+/* Buttons - style for new offers */
+.newJob {
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.newJob:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 0px;
+    border-top: 2px solid #ffcc00;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0078D7;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+footer .button:hover {
+    background-color: #0056A3;
+    transform: scale(1.05);
+}
+
+/* Responsivity for footer */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 12px;
+    }
+
+    footer .button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+/* Main headers */
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffcc00;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #ffcc00;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+/* Navbar */
+nav {
+    background-color: #1a1a1a;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ffcc00; /* Soft accent */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Buttons next to each other */
+    gap: 15px;
+    justify-content: center; /* Center */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+/* Responsivity for phones */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Buttons below each other on mobile phones */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 1px; /* Space between buttons */
+    }
+}
+
+/* Job offers */
+.job-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.job-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    color: #f5f5f5;
+}
+
+.job-card h2 a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.job-card h2 a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+.job-card p {
+    margin: 20px 0;
+}
+
+.job-card .jobInterest {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.job-card .jobInterest:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+/* Search form */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #ffd700;
+}
+
+/* Profile section */
+.profile-section {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.profile-section img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #ffcc00;
+}
+
+/* Messages section */
+.messages-section {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.messages-section img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #ffcc00;
+}
+
+/* Buttons */
+button, .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover, .button:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1a1a1a;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #333;
+    color: #f5f5f5;
+}
+
+table th {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+table tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-section {
+        padding: 10px;
+    }
+
+    button, .button {
+        font-size: 14px;
+    }
+
+    .job-card {
+        width: 90%; /* Offer cards for mobile */
+    }
+
+    .search-input {
+        width: 100%; /* Full width search form */
+    }
+}
