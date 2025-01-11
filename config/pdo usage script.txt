@@ -1,0 +1,10 @@
+// Include the db.php file to connect to the database
+require_once 'config/db.php';
+
+// Use the $pdo object to execute SQL queries
+$query = $pdo->query('SELECT * FROM users');
+$users = $query->fetchAll();
+
+foreach ($users as $user) {
+    echo $user['username'] . '<br>';
+}
